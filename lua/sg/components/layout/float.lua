@@ -53,7 +53,7 @@ function CodyFloat.init(opts)
       row = shared.calculate_row(opts.history.row),
       col = shared.calculate_col(opts.history.col),
       style = "minimal",
-      border = "rounded",
+      border = "single",
       title = " Cody History ",
       title_pos = "center",
     })
@@ -67,7 +67,7 @@ function CodyFloat.init(opts)
       row = shared.calculate_row(prompt.opts.row),
       col = shared.calculate_col(prompt.opts.col),
       style = "minimal",
-      border = "rounded",
+      border = "single",
       title = " Cody Chat ",
       title_pos = "left",
     })

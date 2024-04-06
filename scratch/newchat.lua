@@ -19,7 +19,7 @@ end
 ---@type vim.api.keyset.float_config
 local history_opts = {
   relative = "editor",
-  border = "rounded",
+  border = "single",
   width = history_width,
   height = history_height - 2,
   style = "minimal",
@@ -32,7 +32,7 @@ local history_win = vim.api.nvim_open_win(history_bufnr, true, history_opts)
 
 local prompt_opts = {
   relative = "editor",
-  border = "rounded",
+  border = "single",
   width = prompt_width,
   height = prompt_height,
   style = "minimal",
@@ -44,7 +44,7 @@ local settings_win
 if settings_width > 0 then
   local settings_opts = {
     relative = "editor",
-    border = "rounded",
+    border = "single",
     width = settings_width,
     height = prompt_height,
     style = "minimal",

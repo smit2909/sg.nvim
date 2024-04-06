@@ -435,7 +435,7 @@ function Chat._make_windows(opts)
     ---@type vim.api.keyset.float_config
     local history_opts = {
       relative = "editor",
-      border = "rounded",
+      border = "single",
       width = history_width,
       height = history_height - 2,
       style = "minimal",
@@ -452,7 +452,7 @@ function Chat._make_windows(opts)
 
     local prompt_opts = {
       relative = "editor",
-      border = "rounded",
+      border = "single",
       width = prompt_width,
       height = prompt_height,
       style = "minimal",
@@ -464,7 +464,7 @@ function Chat._make_windows(opts)
     if settings_width > 0 then
       local settings_opts = {
         relative = "editor",
-        border = "rounded",
+        border = "single",
         width = settings_width,
         height = prompt_height + history_height,
         style = "minimal",
@@ -552,7 +552,7 @@ function Chat._make_windows(opts)
     ---@type vim.api.keyset.float_config
     local history_opts = {
       relative = "editor",
-      border = "rounded",
+      border = "single",
       width = history_width,
       height = history_height - 2,
       style = "minimal",

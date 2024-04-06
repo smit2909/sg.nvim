@@ -85,7 +85,7 @@ M.help = function(bufnr)
   local win = vim.api.nvim_open_win(keymap_buf, true, {
     relative = "editor",
     style = "minimal",
-    border = "rounded",
+    border = "single",
     title = "Cody Keymaps",
     col = math.floor(vim.o.columns * 0.1),
     row = math.floor(vim.o.lines * 0.1),
@@ -119,7 +119,7 @@ M.del = function(bufnr, mode, key)
 
   store[bufnr].maps = vim.tbl_filter(function(map)
     return map.mode ~= mode
-      or vim.api.nvim_replace_termcodes(map.key, true, false, true)
+        or vim.api.nvim_replace_termcodes(map.key, true, false, true)
         ~= vim.api.nvim_replace_termcodes(key, true, false, true)
   end, store[bufnr].maps)
 end

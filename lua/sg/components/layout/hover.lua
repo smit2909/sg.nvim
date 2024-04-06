@@ -48,7 +48,7 @@ function CodyHover.init(opts)
       row = shared.calculate_row(opts.history.row),
       col = shared.calculate_col(opts.history.col),
       style = "minimal",
-      border = "rounded",
+      border = "single",
       title = " Cody History ",
       title_pos = "center",
     })
